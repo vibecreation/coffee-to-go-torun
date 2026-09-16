@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coffee To Go &mdash; Coffee &amp; Study Space | UMK, Toru&#324;</title>
+<meta name="description" content="Coffee To Go &mdash; a laptop-friendly caf&eacute; near Nicolaus Copernicus University's Gagarina campus in Toru&#324;." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%231A1A1A'/%3E%3Cpath d='M6 9h11v5a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V9z' fill='none' stroke='%235A7A5A' stroke-width='1.3'/%3E%3Cpath d='M17 10.5h1.3a2 2 0 0 1 0 4H17' fill='none' stroke='%235A7A5A' stroke-width='1.3'/%3E%3Cpath d='M9 6.5c0-1 .8-1 .8-2M12 6.5c0-1 .8-1 .8-2' stroke='%235A7A5A' stroke-width='1.1' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<meta property="og:title" content="Coffee To Go &mdash; Coffee &amp; Study Space | UMK, Toru&#324;" />
+<meta property="og:description" content="Coffee To Go &mdash; a laptop-friendly caf&eacute; near Nicolaus Copernicus University's Gagarina campus in Toru&#324;." />
+<meta property="og:type" content="restaurant.cafe" />
+<meta name="twitter:card" content="summary" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Coffee To Go",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jurija Gagarina 152, 87-100 Toru&#324;"
+  },
+  "sameAs": "https://www.instagram.com/coffeetogo_torun_gagarina"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1A1A1A',
+          gold: { DEFAULT: '#5A7A5A', dim: '#435C43', light: '#82A382' },
+          cream: '#FCF9F3',
+          ash: '#6E6A63',
+        },
+        fontFamily: { display: ['Cinzel', 'serif'], body: ['Plus Jakarta Sans', 'sans-serif'] },
+      },
+    },
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #FCF9F3; }
+  section[id] { scroll-margin-top: 72px; }
+  .cut-corner { clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px); }
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(28px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { opacity: 0; }
+  .reveal.in-view { animation: fadeUp 1s cubic-bezier(0.16,1,0.3,1) forwards; }
+  .reveal-delay-1.in-view { animation-delay: 0.15s; }
+  .reveal-delay-2.in-view { animation-delay: 0.3s; }
+  .reveal-delay-3.in-view { animation-delay: 0.45s; }
+  @keyframes bounce2 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(10px);} }
+  .scrollcue { animation: bounce2 1.8s ease-in-out infinite; }
+</style>
+</head>
+<body class="font-body text-ink">
+
+<nav class="fixed top-0 w-full z-50 bg-ink/90 backdrop-blur text-cream">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <span class="font-display tracking-[0.2em] text-gold text-lg">COFFEE TO GO</span>
+    <div class="hidden md:flex gap-8 text-sm tracking-wide">
+      <a href="#story" class="hover:text-gold transition">Our Story</a>
+      <a href="#menu" class="hover:text-gold transition">Menu</a>
+      <a href="#visit" class="hover:text-gold transition">Visit</a>
+    </div>
+  </div>
+</nav>
+
+<section class="relative min-h-[100dvh] w-full bg-ink flex flex-col items-center justify-center text-center overflow-hidden px-6">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#151B15] via-[#1E271E] to-[#151B15]"></div>
+  <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 30% 20%, #5A7A5A40, transparent 50%), radial-gradient(circle at 70% 80%, #82A38230, transparent 50%);"></div>
+  <div class="relative z-10">
+    <p class="reveal in-view tracking-[0.3em] text-xs md:text-sm mb-6 text-gold">UMK CAMPUS &middot; TORU&Nacute;</p>
+    <h1 class="reveal in-view reveal-delay-1 font-display text-6xl md:text-8xl text-cream mb-6">Coffee To Go</h1>
+    <p class="reveal in-view reveal-delay-2 text-cream/80 text-xl md:text-2xl font-light mb-3">Coffee, Beer &amp; A Place to Study</p>
+    <p class="reveal in-view reveal-delay-3 text-cream/50 text-sm">Two locations &middot; Laptop-friendly &middot; Wi-Fi &amp; workspace desks</p>
+    <div id="statusBadge" class="reveal in-view reveal-delay-3 inline-flex items-center gap-2 mt-5 px-4 py-1.5 rounded-full border border-gold/30 text-xs tracking-wide">
+      <span id="statusDot" class="w-2 h-2 rounded-full bg-gold"></span>
+      <span id="statusText" class="text-cream/70">Checking hours&hellip;</span>
+    </div>
+  </div>
+  <a href="#story" class="absolute bottom-10 z-10 text-gold scrollcue" aria-label="Scroll down">
+    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 4v16m0 0l-6-6m6 6l6-6"/></svg>
+  </a>
+</section>
+
+<section id="story" class="reveal py-24 px-6 max-w-4xl mx-auto text-center">
+  <p class="text-gold tracking-[0.3em] text-xs mb-4">OUR STORY</p>
+  <h2 class="font-display text-3xl md:text-4xl mb-6">Right where students actually want to be</h2>
+  <p class="text-ash text-lg leading-relaxed">
+    Perched near Nicolaus Copernicus University's Gagarina campus, Coffee To Go has become the unofficial second office for students and staff alike. Calm atmosphere, cool lounge music, proper desks for working, and reliable Wi-Fi &mdash; alongside genuinely good coffee, beer, and a fresh orange juice regulars specifically call out. Warm, relaxed, and exactly where you'd want to be between lectures.
+  </p>
+</section>
+
+<section id="menu" class="reveal py-24 px-6 bg-white">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-gold tracking-[0.3em] text-xs text-center mb-4">THE MENU</p>
+    <h2 class="font-display text-3xl md:text-4xl text-center mb-16">Coffee &amp; Drinks</h2>
+    <div class="grid md:grid-cols-2 gap-x-16 gap-y-4">
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Espresso</span><span class="text-gold">9 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Flat White</span><span class="text-gold">14 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Cappuccino</span><span class="text-gold">13 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Fresh Orange Juice</span><span class="text-gold">15 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Croque Madame</span><span class="text-gold">22 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Sandwich of the Day</span><span class="text-gold">18 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Homemade Cake Slice</span><span class="text-gold">14 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Draft Beer</span><span class="text-gold">12 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Iced Latte</span><span class="text-gold">16 z&#322;</span></div>
+      <div class="flex justify-between border-b border-gold/20 py-3"><span>Tea</span><span class="text-gold">9 z&#322;</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="reveal py-24 px-6 bg-ink text-cream">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-gold tracking-[0.3em] text-xs mb-4">VISIT</p>
+    <h2 class="font-display text-3xl md:text-4xl mb-10">Come by</h2>
+
+    <div class="relative w-full mb-10">
+      <div class="absolute -inset-2 border border-gold/25" style="clip-path: polygon(28px 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%, 0 28px);"></div>
+      <div class="relative w-full overflow-hidden bg-ink" style="clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px); border: 1px solid #5A7A5A55;">
+        <iframe
+          src="https://www.google.com/maps?q=Coffee+To+Go+Jurija+Gagarina+152+Torun&output=embed"
+          width="100%" height="320" style="border:0; filter: invert(90%) contrast(85%) hue-rotate(180deg) brightness(0.9) saturate(0.8); display:block;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Coffee To Go location map">
+        </iframe>
+      </div>
+      <div class="absolute top-0 left-0 w-7 h-7 border-t-2 border-l-2 border-gold/70 pointer-events-none"></div>
+      <div class="absolute bottom-0 right-0 w-7 h-7 border-b-2 border-r-2 border-gold/70 pointer-events-none"></div>
+    </div>
+
+    <p class="text-cream/70 mb-2">Jurija Gagarina 152, 87-100 Toru&#324;</p>
+    <p class="text-gold/80 text-sm mb-8">See Instagram for current hours</p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Coffee+To+Go+Jurija+Gagarina+152+Torun" target="_blank" rel="noopener noreferrer"
+         class="cut-corner inline-flex items-center gap-2 border border-gold/50 hover:border-gold text-cream font-medium px-8 py-4 transition">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Get Directions
+      </a>
+      <a href="https://www.instagram.com/coffeetogo_torun_gagarina" target="_blank" rel="noopener noreferrer"
+         class="cut-corner inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-ink font-medium px-8 py-4 transition">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.02-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07zm0 5.27a4.57 4.57 0 100 9.14 4.57 4.57 0 000-9.14zm0 7.54a2.97 2.97 0 110-5.94 2.97 2.97 0 010 5.94zm5.83-7.72a1.07 1.07 0 11-2.14 0 1.07 1.07 0 012.14 0z"/></svg>
+        Follow @coffeetogo_torun_gagarina
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-ash text-xs bg-cream">
+  &copy; 2026 Coffee To Go &middot; Toru&#324;
+</footer>
+
+<script>
+  var els = document.querySelectorAll('.reveal:not(.in-view)');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+
+  document.getElementById('statusText').textContent = 'See hours below';
+</script>
+
+</body>
+</html>
